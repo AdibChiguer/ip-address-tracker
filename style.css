@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik" , sans-serif ;
+}
+
+:root {
+  --Very-Dark-Gray : hsl(0, 0%, 17%);
+  --Dark-Gray : hsl(0, 0%, 59%);
+}
+
+.ip_address_header {
+  width: 100%;
+  height: 35vh;
+  background-image: url(./images/pattern-bg-desktop.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.ip_address_header h2 {
+  text-transform: capitalize;
+  color: white;
+  margin: 1rem 0 ;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.ip_address_header-input-box {
+  width: 500px;
+  display: flex;
+  margin: 1rem;
+}
+
+.ip_address_header-input-box input {
+  width: 90%;
+  padding: 1rem 1rem;
+  border-top-left-radius: 10px ;
+  border-bottom-left-radius: 10px ;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.ip_address_header-input-box input::placeholder {
+  color: var(--Dark-Gray);
+}
+
+.ip_address_header button {
+  width: 10%;
+  border-top-right-radius: 10px ;
+  border-bottom-right-radius: 10px ;
+  background-color: var(--Very-Dark-Gray);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.ip_address_header button:hover {
+  background-color: hsla(0, 0%, 17%, 0.793);
+}
+
+.ip_address_header-input-result {
+  display: flex;
+  background-color: #ffffff;
+  padding: 1rem;
+  width: 80%;
+  height: 18vh;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  z-index: 222;
+  position: absolute;
+  bottom: -25%;
+}
+
+.ip_address_header-input-result .input-results-box p {
+  margin-bottom: 1rem;
+}
+
+.ip_address_header-input-result .input-results-box h3 {
+  font-weight: 700;
+}
+
+.vl {
+  width: 0.5px;
+  background-color: var(--Dark-Gray);
+  height: 90%;
+}
+
+.input-results-box {
+  width: 14%;
+  height: 100%;
+}
+
+.input-results-box p {
+  color: var(--Dark-Gray);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.input-results-box h3 {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: black;
+}
+
+.ip_address_body {
+  width: 100%;
+  height: 65vh;
+  background-color: var(--Dark-Gray);
+  z-index: 0;
+}
+
+@media only screen and ( max-width : 975px ){
+  .ip_address_header {
+    background-image: url(./images/pattern-bg-mobile.png);
+    
+  }
+  .ip_address_header h2 {
+    margin-top: 1rem;
+  }
+  .ip_address_header-input-box {
+    margin: 1rem;
+    margin-top: 0rem;
+    width: 90%;
+  }
+  .ip_address_header-input-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 36vh;
+    width: 90%;
+    bottom: -58%;
+  }
+  .ip_address_header-input-result .input-results-box p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .ip_address_header-input-box input {
+    width: 85%;
+  }
+  .ip_address_header button {
+    width: 15%;
+  }
+  .vl {
+    display: none;
+  }
+  .input-results-box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media only screen and ( max-width : 375px ){
+  .ip_address_header {
+    background-image: url(./images/pattern-bg-mobile.png);
+    
+  }
+  .ip_address_header h2 {
+    margin-top: 1rem;
+  }
+  .ip_address_header-input-box {
+    margin: 1rem;
+    margin-top: 0rem;
+    width: 90%;
+  }
+  .ip_address_header-input-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 36vh;
+    width: 90%;
+    bottom: -58%;
+  }
+  .ip_address_header-input-result .input-results-box p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .ip_address_header-input-box input {
+    width: 85%;
+  }
+  .ip_address_header button {
+    width: 15%;
+  }
+  .vl {
+    display: none;
+  }
+  .input-results-box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+}

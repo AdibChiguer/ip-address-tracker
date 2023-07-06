@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ip address tracker</title>
+  <!-- GOOGLE FONT  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <!-- * GOOGLE FONT *  -->
+  <!-- CSS STYLE -->
+  <link rel="stylesheet" href="style.css">
+  <!-- * CSS STYLE * -->
+  <!-- AXIOS -->
+  <script src="./node_modules/axios/dist/axios.js"></script>
+  <!-- * AXIOS * -->
+  <!-- LEAFLET -->
+  <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
+  <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+  <!-- * LEAFLET * -->
+</head>
+<body>
+
+  <div class="ip_address_header">
+    <h2>IP address tracker</h2>
+    <div class="ip_address_header-input-box">
+      <input type="text" placeholder="Search for any IP address or domain" id="input">
+      <button id="btn"><img src="./images/icon-arrow.svg" alt=""></button>
+    </div>
+    
+    <div class="ip_address_header-input-result">
+      <div class="input-results-box">
+        <p>IP Address</p>
+        <h3 id="ip-res">192.212.174.101</h3>
+      </div>
+      <div class="vl"></div>
+      <div class="input-results-box">
+        <p>Location</p>
+        <h3 id="location-res">Brooklyn, NY 10001</h3>
+      </div>
+      <div class="vl"></div>
+      <div class="input-results-box">
+        <p>timezone</p>
+        <h3 id="timezone-res">UTC -05:00</h3>
+      </div>
+      <div class="vl"></div>
+      <div class="input-results-box">
+        <p>isp</p>
+        <h3 id="isp-res">SpaceX Starlink</h3>
+      </div>
+    </div>
+  </div>
+  <div class="ip_address_body" id="map">
+    
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="main.js"></script>
+  <!-- * JAVASCRIPT * -->
+</body>
+</html>
